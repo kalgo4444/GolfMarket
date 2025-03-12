@@ -3,10 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media (max-width:1920px) {
+    .lineFtr2{
+        display: none;
+    }
+}
 @media (max-width: 990px) {
     /* latest  */
     .latestCardWrapper{
         grid-template-columns: repeat(2, 1fr);
+    }
+    /* footer  */
+    .lineFtr2{
+        display: none;
+    }
+    /* collaction  */
+    .collactionTitle{
+        margin: 0 auto;
+    }
+    .collactioncardWrapper{
+        margin-top: 48px;
+        margin-bottom: 48px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .collactioncard:nth-child(1){
+        grid-column: auto;
+        grid-row:  auto;
+    }
+    .collactioncard:nth-child(2){
+        grid-column: auto;
     }
 }
 
@@ -30,6 +57,14 @@
     .footerWrapper{
         grid-template-columns: repeat(2, 1fr);
     }
+    .lineFtr{
+        display: none;
+    }
+    .lineFtr2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
@@ -45,6 +80,7 @@
         .hero{
             background: url("../images/mobileHeroBack.png") no-repeat center/cover;
         }
+        
         .heroWrapper{
             text-align: center;
         }
@@ -147,6 +183,32 @@
     }
     .footerItems:nth-child(3){
         border-bottom: 1px solid #ddd;
+    }
+    .lineFtr2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* collaction  */
+    .collactionTitle{
+        max-width: 270px;
+        width: 100%;
+        font-size: 34px;
+    }
+    .collactioncardWrapper{
+        margin-top: 18px;
+    }
+    .cardInDesc{
+        left: 32px;
+        bottom: 32px;
+    }
+    .cardInDesc p{
+        font-size: 28px;
+    margin-bottom: 8px;
+    }
+    .cardInDesc button{
+        font-size: 14px;
     }
 
 }
