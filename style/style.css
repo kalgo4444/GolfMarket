@@ -52,6 +52,7 @@ img{
     left: 0;
     background: #fff;
     z-index: 99;
+    border-bottom: 1px solid;
 }
 .adsheader{
     width: 100%;
@@ -235,10 +236,6 @@ img{
 
 
 /* latest  */
-.latestWrapper{
-    height: 657px;
-    /* border: 1px solid red; */
-}
 .latestDesc{
     margin-top: 80px;
     display: flex;
@@ -265,15 +262,7 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-}
-.latestcardImg{
-    overflow: hidden;
-}
-.latestcardImg img{
-    transition: .3s;
-}
-.latestcardImg:hover img{
-    transform: scale(1.05);
+    margin-bottom: 80px;
 }
 .latestcardBody p{
     max-width: 352px;
@@ -281,6 +270,7 @@ img{
     margin-top: 24px;
     font-size: 20px;
     font-family: Poppins;
+    font-weight: 500;
 }
 .latestCardBtn{
     margin-top: 8px;
@@ -291,4 +281,67 @@ img{
     font-size: 16px;
     font-weight: 500;
     border-bottom: 1px solid;
+}
+
+/* join  */
+.join{
+    height: 360px;
+    background: url("../images/joinback.png") no-repeat center/cover;
+}
+.joinWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+.joinTitle{
+    margin-top: 101px;
+    max-width: 450px;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 40px;
+}
+.joinText{
+    margin-top: 8px;
+    max-width: 540px;
+    width: 100%;
+    font-family: Inter;
+    font-size: 18px;
+}
+.joinInput{
+    margin-top: 32px;
+    max-width: 488px;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    border-bottom: 1px solid #fff;
+}
+.joinInputLelt{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.joinInputLelt input{
+    color: #fff;
+    font-weight: 500;
+}
+.joinInputLelt input::placeholder{
+    color: #fff;
+    font-weight: 500;
+}
+
+.joinInput button{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s;
+}
+.joinInput button:hover{
+    color: var(--btnColor)
 }
