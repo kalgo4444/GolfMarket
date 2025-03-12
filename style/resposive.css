@@ -3,3 +3,68 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 750px) {
+    /* navbar  */
+    .navCollaction{
+        display: none;
+    }
+
+    /* shopCards */
+    .shopCardWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+        /* navbar  */
+        .navCollaction{
+            display: none;
+        }
+        .navRightItem1{
+            display: none;
+        }
+        
+        /* hero  */
+        .hero{
+            background: url("../images/mobileHeroBack.png") no-repeat center/cover;
+        }
+        .heroWrapper{
+            text-align: center;
+        }
+        .heroWrapper h1{
+            margin-top: 430px;
+            font-size: 40px;
+        }
+        .heroWrapper p{
+            margin-top: 18px;
+            font-size: 16px;
+        }
+        .heroWrapper button{
+            margin: 16px auto 0;
+        }
+
+    /* shopCards */
+    .shopCardsTitle{
+        margin-top: 40px;
+    }
+    .shopCardWrapper{
+        margin-top: 28px;
+    }
+    .shopCardWrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 8px;
+    }
+}
+@media (max-width: 400px) {
+    /* adsheader  */
+    .adsheader p{
+        font-size: 12px;
+    }
+    .adsheader .adsBtn{
+        display: none;
+    }
+}
