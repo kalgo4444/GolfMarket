@@ -20,6 +20,16 @@
     .shopCardWrapper{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* newspeed  */
+    .newspeedimages{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* footer  */
+    .footerWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 500px) {
@@ -100,6 +110,45 @@
     .latestCardBtn span{
         font-size: 14px;
     }
+    
+    /* join  */
+    .joinWrapper{
+        padding: 95px 0 95px;
+    }
+    .joinTitle{
+        max-width: 312px;
+        width: 100%;
+        font-size: 28px;
+    }
+    .joinText{
+        max-width: 311px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .joinInput{
+        max-width: 311px;
+        width: 100%;
+    }
+
+    /* newspeed  */
+    .newspeedimages{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer  */
+    .footerWrapper{
+        grid-template-columns: 1fr;
+    }
+    .footerItems:nth-child(1){
+        border-bottom: 1px solid #ddd;
+    }
+    .footerItems:nth-child(2){
+        border-bottom: 1px solid #ddd;
+    }
+    .footerItems:nth-child(3){
+        border-bottom: 1px solid #ddd;
+    }
+
 }
 @media (max-width: 400px) {
     /* adsheader  */
