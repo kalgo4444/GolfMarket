@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 @media (max-width: 990px) {
-
+    /* latest  */
+    .latestCardWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 750px) {
@@ -50,6 +53,9 @@
     /* shopCards */
     .shopCardsTitle{
         margin-top: 40px;
+        font-size: 34px;
+        line-height: 1.1;
+        font-weight: 500;
     }
     .shopCardWrapper{
         margin-top: 28px;
@@ -57,6 +63,42 @@
     .shopCardWrapper{
         grid-template-columns: repeat(2, 1fr);
         gap: 24px 8px;
+        margin-bottom: 40px;
+    }
+
+    /* collaction  */
+    .collactionWrapper{
+
+    }
+    .collactionTitle{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    /* latest  */
+    .latestTitle{
+        max-width: 13px;
+        width: 100%;
+        font-size: 34px;
+    }
+    .latestBtn{
+        transform: translateY(25px);
+        position: relative;
+        gap: 4px;
+    }
+    .latestBtn span{
+        font-size: 14px;
+    }
+.latestCardWrapper{
+    grid-template-columns: 1fr;
+}
+.latestcardBody p{
+    margin-top: 16px;
+    font-size: 16px;
+}
+    .latestCardBtn span{
+        font-size: 14px;
     }
 }
 @media (max-width: 400px) {

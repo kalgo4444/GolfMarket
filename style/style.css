@@ -51,6 +51,7 @@ img{
     top: 0;
     left: 0;
     background: #fff;
+    z-index: 99;
 }
 .adsheader{
     width: 100%;
@@ -164,7 +165,6 @@ img{
 }
 .shopCardsWrapper{
     width: 100%;
-    height: 1022px;
 }
 .shopCardsTitle{
     margin-top: 80px;
@@ -180,6 +180,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 48px 24px;
+    margin-bottom: 80px;
 }
 .shopCardDesc{
     padding-top: 24px;
@@ -195,4 +196,99 @@ img{
 }
 .shopCardImg:hover img{
     transform: scale(1.05);
+}
+
+/* collactionWrapper */
+.collactionWrapper{
+
+}
+.collactionTitle{
+    margin-top: 48px;
+    max-width: 320px;
+    width: 100%;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.collactioncardWrapper{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* latest  */
+.latestWrapper{
+    height: 657px;
+    /* border: 1px solid red; */
+}
+.latestDesc{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.latestTitle{
+    font-size: 40px;
+    font-family: Poppins;
+}
+.latestBtn{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    border-bottom: 1px solid;
+}
+.latestBtn span{
+    font-weight: 500;
+    font-family: Inter;
+}
+.latestCardWrapper{
+    margin-top: 40px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.latestcardImg{
+    overflow: hidden;
+}
+.latestcardImg img{
+    transition: .3s;
+}
+.latestcardImg:hover img{
+    transform: scale(1.05);
+}
+.latestcardBody p{
+    max-width: 352px;
+    width: 100%;
+    margin-top: 24px;
+    font-size: 20px;
+    font-family: Poppins;
+}
+.latestCardBtn{
+    margin-top: 8px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid;
 }
