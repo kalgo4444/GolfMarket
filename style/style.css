@@ -200,8 +200,6 @@ img {
 }
 
 /* collactionWrapper */
-.collactionWrapper {
-}
 .collactionTitle {
   margin-top: 48px;
   max-width: 320px;
@@ -210,14 +208,14 @@ img {
   font-family: Poppins;
   font-weight: 500;
 }
-.collactioncardHead{
-    overflow: hidden;
+.collactioncardHead {
+  overflow: hidden;
 }
-.collactioncardHead img{
-    transition: .3s;
+.collactioncardHead img {
+  transition: 0.3s;
 }
-.collactioncardHead img:hover{
-    transform: scale(1.03);
+.collactioncardHead img:hover {
+  transform: scale(1.03);
 }
 .collactioncardWrapper {
   margin-top: 48px;
@@ -228,8 +226,8 @@ img {
   place-items: center;
   overflow: hidden;
 }
-.collactioncard{
-    overflow: hidden;
+.collactioncard {
+  overflow: hidden;
 }
 .collactioncard:nth-child(1) {
   grid-column: 1/3;
